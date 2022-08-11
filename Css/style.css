@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#canvas1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.title-game{
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.container-game{
+    height: 80vh;
+    width: 80vw;
+    border: 2px solid black;
+    margin: 0 auto;
+
+}
+.pc-team{
+    height: 50%;
+    display: flex;
+    border: 1px solid red;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.player-team{
+    height: 50%;
+    display: flex;
+    border: 1px solid red;
+    flex-direction:row-reverse;
+    flex-wrap: wrap;    
+}
+
+.fight{
+    border: 2px solid yellowgreen;
+    flex: 5;
+}
+.team-display{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-content: space-evenly;
+    flex-wrap: wrap;
+    overflow: hidden;
+    gap: 1;
+}
+.team-display img{
+    width: 100px;
+    height: 100px;
+    margin: 1rem 1rem;
+}
+
+.side-pokemon:hover{
+    cursor: pointer;
+
+}
+

@@ -1,4 +1,4 @@
-
+// Faz o Fetch de varias APIs
 const fetchJson = async(endPoint,name)=>{
     try{
         const resposta = `${endPoint}${name}`
@@ -10,3 +10,4 @@ const fetchJson = async(endPoint,name)=>{
         return (error)
     }
 }
+// Fim da fetchJson

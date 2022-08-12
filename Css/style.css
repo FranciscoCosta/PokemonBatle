@@ -5,15 +5,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-#canvas1{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
+:root {
+    --lightbrown: #c08364;
+    --lightblue: #ccdfee;
+    --lightgreen: #7dff00;
+  }
 
 
 .title-game{
@@ -23,30 +19,29 @@
 }
 
 .container-game{
-    height: 80vh;
-    width: 80vw;
-    border: 2px solid black;
+    height: 90vh;
+    width: 85vw;
     margin: 0 auto;
+    border: 4px solid black;
 
 }
 .pc-team{
     height: 50%;
     display: flex;
-    border: 1px solid red;
     flex-direction: row;
     flex-wrap: wrap;
+    border-bottom: 4px solid black;
 }
 .player-team{
     height: 50%;
     display: flex;
-    border: 1px solid red;
     flex-direction:row-reverse;
     flex-wrap: wrap;    
 }
 
 .fight{
-    border: 2px solid yellowgreen;
     flex: 5;
+    background-color: var(--lightbrown);
 }
 .team-display{
     display: flex;
@@ -54,17 +49,58 @@
     justify-content: center;
     align-content: space-evenly;
     flex-wrap: wrap;
-    overflow: hidden;
     gap: 1;
+    background-color: var(--lightblue);
 }
 .team-display img{
-    width: 100px;
-    height: 100px;
+    width: 10rem;
+    height: 10rem;
     margin: 1rem 1rem;
 }
 
 .side-pokemon:hover{
     cursor: pointer;
-
 }
 
+.Pokemon-active-pc{
+    width: 20%;
+    margin-left:75%;
+    margin-top: 2%;
+}
+.Pokemon-active-player{
+    width: 20%;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+.moves-buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.moves-buttons button{
+    width: 20rem;
+    height: 12rem;
+    border-color: 2px solid black;
+    border-radius: 0.9rem;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+.pokemon-ativo{
+    display: flex;
+    flex-direction: column;
+}
+.vida-display-player{
+    width: 20%;
+    margin-left: 10%;
+    margin-top: 2%;
+    background-color: var(--lightgreen);
+}
+.vida-display-pc{
+    width: 20%;
+    margin-left: 75%;
+    margin-top: 2%;
+    background-color: var(--lightgreen);
+
+}
